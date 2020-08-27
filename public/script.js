@@ -9,7 +9,7 @@ $(document).ready(function() {
     //function getBartenders(){
         $.ajax({
             type: 'GET',
-            url: '/api/bartender',
+            url: 'ec2-3-208-50-226.compute-1.amazonaws.com/api/bartender',
             connection: 'Keep-Alive',
             success: function(data){ 
                 $('#names').find('span').remove();
@@ -30,7 +30,7 @@ $(document).ready(function() {
         
         $.ajax({
             type: 'GET',
-            url: '/api/drinks',
+            url: 'ec2-3-208-50-226.compute-1.amazonaws.com/api/drinks',
             connection: 'Keep-Alive',
             success: function(data){ 
                 let drinklist=[]
