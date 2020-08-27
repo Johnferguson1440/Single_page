@@ -9,7 +9,7 @@ $(document).ready(function() {
     //function getBartenders(){
         $.ajax({
             type: 'GET',
-            url: '/api/bartender',
+            url: 'https://calm-chamber-49755.herokuapp.com/api/bartender',
             connection: 'Keep-Alive',
             success: function(data){ 
                 $('#names').find('span').remove();
@@ -30,7 +30,7 @@ $(document).ready(function() {
         
         $.ajax({
             type: 'GET',
-            url: '/api/drinks',
+            url: 'https://calm-chamber-49755.herokuapp.com/api/drinks',
             connection: 'Keep-Alive',
             success: function(data){ 
                 let drinklist=[]
@@ -82,7 +82,7 @@ $(document).ready(function() {
                 
                 $.ajax({
                     type: 'POST',
-                    url: '/api/bartender',
+                    url: 'https://calm-chamber-49755.herokuapp.com/api/bartender',
                     connection: 'Keep-Alive',
                     data: {'name':name, 'quote':quote, 'drinkID':drinkID},
                     dataType: "text",
@@ -111,7 +111,7 @@ $(document).ready(function() {
 function getDrinks(){
     $.ajax({
         type: 'GET',
-        url: '/api/drinks',
+        url: 'https://calm-chamber-49755.herokuapp.com/api/drinks',
         connection: 'Keep-Alive',
         success: function(data){ 
             for(var i =0; i <data.length; i++){
@@ -135,7 +135,7 @@ $('#names').on('click', '.bartender',function(){
   function getBartenderDrink(id,drink){
     $.ajax({
         type: 'GET',
-        url: '/api/drinks/'+drink,
+        url: 'https://calm-chamber-49755.herokuapp.com/api/drinks/'+drink,
         connection: 'Keep-Alive',
         success: function(data){ 
            //if success then get the drink id and call on drinkID request function
