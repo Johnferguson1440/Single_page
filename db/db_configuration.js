@@ -5,6 +5,7 @@ const pool = new Pool({
     host:process.env.DATA_HOST, /*verify with command " \conninfo" in psql repl*/
     database: process.env.DATA_DATABASE,
     password: process.env.DATA_PASS,
-    //port: process.env.DATA_PORT
+    port: process.env.DATA_PORT
+  
 })
  module.exports = pool;

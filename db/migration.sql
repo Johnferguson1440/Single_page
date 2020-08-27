@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS drinks;
-CREATE DATABASE drinks;
-\c drinks
+--DROP DATABASE IF EXISTS drinks;
+--CREATE DATABASE drinks;
+--\c drinks
 
 
 
