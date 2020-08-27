@@ -13,11 +13,12 @@ $(document).ready(function() {
             connection: 'Keep-Alive',
             success: function(data){ 
                 $('#names').find('span').remove();
-                for(var i=0; i<data.length; i++){
-                    let name= data[i].name;
-                    let quote =data[i].quote;            
-                    let drinkID = data[i].drinkid;
-                    let id = data[i].id;
+                let parsed = JSON.parse(data);
+                for(var i=0; i<parsed.length; i++){
+                    let name= parsed[i].name;
+                    let quote =parsed[i].quote;            
+                    let drinkID = parsed[i].drinkid;
+                    let id = parsed[i].id;
                     $('#names').append(`<div id = "${id}" class="bartender" title= "${drinkID}">
                     <h2> ${name}</h2>
                     <h3>Favorite quote: "${quote}"</h3></div>`)
@@ -34,13 +35,13 @@ $(document).ready(function() {
             connection: 'Keep-Alive',
             success: function(data){ 
                 let drinklist=[]
-                
-                for(var i =0; i <data.length; i++){
-                    let name= data[i].name;
-                    let type= data[i].type;
-                    let image= data[i].image;
-                    let link = data[i].link;
-                    let id= data[i].id;
+                let parsed = JSON.parse(data);
+                for(var i =0; i <parsed.length; i++){
+                    let name= parsed[i].name;
+                    let type= parsed[i].type;
+                    let image= parsed[i].image;
+                    let link = parsed[i].link;
+                    let id= parsed[i].id;
                     let numberD = {drink:name, id:id};
                     drinklist.push(numberD);
                 }
