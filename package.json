@@ -1,0 +1,26 @@
+{
+  "name": "single_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johnferguson1440/Single_page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Johnferguson1440/Single_page/issues"
+  },
+  "homepage": "https://github.com/Johnferguson1440/Single_page#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.3.2"
+  }
+}

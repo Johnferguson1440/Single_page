@@ -1,0 +1,3 @@
+#ignore file on git
+.env
+node_modules

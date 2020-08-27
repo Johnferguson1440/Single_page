@@ -1,0 +1,84 @@
+body, html {
+    height: 100%;
+    background-size: cover;
+  }
+.body { 
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-color: rgb(248, 202, 50);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+  }
+  #names {
+    position: center;
+    display: table-row;
+    width : 200px;
+    height : 200px;
+    position : relative;
+    left : 25%;
+    top :5%;   
+    justify-content: space-evenly;
+  }
+
+.bartender {
+    position: center;
+    justify-content: space-evenly;
+    margin-right: auto; 
+    margin-left: auto;
+    float: left;
+    display: flexbox;
+    flex-direction: row;
+    text-align: center; 
+    color: rgb(31, 4, 184);
+    width : 400px;
+    height : 200px;
+    padding: 50px;
+    border : 1px solid rgb(0, 0, 0);
+  }
+#title {
+    
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+img{
+    display:block;
+    margin-right: auto; 
+    margin-left: auto;  
+    max-width: 300px;
+    max-height: 300px;
+    
+}
+.drink {
+    text-align: center;
+    padding-bottom: 200px;
+    display:block;
+    margin-right: auto; 
+    margin-left: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+a{
+    display:block;
+    margin-right: auto; 
+    margin-left: auto;
+    max-width: 300px;
+    max-height: 300px;
+    font-size: 50px;
+    color: rgb(16, 164, 223);
+}
+#post {
+  padding-bottom: 50px;
+ 
+}
+
+.wrapper {
+  display: inline-block;
+}
+.wrapper button {
+  display: block;
+}
