@@ -27,8 +27,12 @@ app.use(express.static('public'))
 //reg drinks
 app.get('/api/bartender', function(req, res){
     db.query('SELECT * FROM bartender;', function(err, data){
+        if(err){
+            console.log(err);
+            
+        }else{
     res.json(data.rows);
-    })
+    }})
     
 })
 //alcoholic drinks
