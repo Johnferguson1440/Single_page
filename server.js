@@ -19,6 +19,7 @@ app.use(morgan("short"));
 app.use(express.static('public'))
 
 
+console.log(db.DATABASE_HOST)
 
 //handle request with routes
 //add all routes indiv then refactor after.
