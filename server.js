@@ -258,7 +258,7 @@ app.delete('/api/drinks/:id', function(req, res){
 })
 
  //listen on a port
-app.listen(3000, function(){
+app.listen(process.env.PORT ||3000, function(){
     console.log('server is running on 3000');
 })
 module.exports= app;
