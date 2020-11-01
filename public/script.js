@@ -127,7 +127,7 @@ function getDrinks(){
 //need a way to grab the drink id and pass it into the url field
 $('#names').on('click', '.bartender',function(){
     let currentID = this.id;
-    let  currentTitle= this.title;
+    let  currentTitle= this.class;
   
     getBartenderDrink(currentID, currentTitle)
   })
